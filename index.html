@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - The Binding of Isaac</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="game.js">
+    <link rel="icon" href="assets/img/favicon-32x32.png" type="image/png">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Isaac Portfolio</h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- Accueil -->
+    <section id="home">
+        <h1>Bienvenue dans mon Portfolio</h1>
+        <p>Inspiré par <em>The Binding of Isaac</em></p>
+        <p>fait par beriot lukas</p>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skill">
+            <img src="assets/img/3804bcf0d3b866869b3ae2a1cd16b225-removebg-preview-removebg-preview.png" alt="HTML Icon" class="skill-icon">
+            <p>HTML - Niveau : 80%</p>
+            <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <img src="assets/img/dddddddddddd-removebg-preview-removebg-preview.png" alt="CSS Icon" class="skill-icon">
+            <p>CSS - Niveau : 70%</p>
+            <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <img src="assets/img/black_heart-removebg-preview.png" alt="HTML Icon" class="skill-icon">
+            <p>JS - Niveau : 80%</p>
+            <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="project-card">
+            <img src="assets/img/carousel-3.png" alt="Projet 1">
+            <h3>Création d'un Mini-Jeu isaac</h3>
+            <p>Ce mini-jeu inspiré de The Binding of Isaac a été réalisé en utilisant HTML, SCSS et JavaScript. <br> <br>
+                Le canevas HTML sert de base pour les éléments graphiques, où un personnage contrôlé par le joueur se déplace pour esquiver et éliminer des ennemis. <br> <br>
+                Le jeu utilise JavaScript pour gérer les déplacements, les collisions, les projectiles et le système de score. Des images en .png sont intégrées pour personnaliser les sprites, et le score évolue dynamiquement en fonction des ennemis éliminés, rendant le jeu plus difficile à mesure que le joueur progresse.</p>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section id="about">
+        <h2>À Propos</h2>
+        <p>Edmund McMillen : Une Source d'Inspiration pour Mon Parcours dans le Codage <br> Edmund McMillen est bien plus qu'un simple développeur de jeux vidéo ; c'est une figure emblématique de la créativité indépendante dans l'industrie du gaming.<br> Connu pour des chefs-d'œuvre comme The Binding of Isaac,Super Meat Boy,The End Is Night et bien d'autre...<br>les jeux créé par Edmund McMillen sont d'une extreme dificulté les joueurs qui veulent terminés c'est jeux entierement doivent doivent ce manié d'une persévérance sans faille<br>McMillen a pris des thèmes complexes la religion, les traumatismes, et la croissance personnelle et les a transformés en un jeu fascinant et mécaniquement riche<br>McMillen a souvent partagé dans des interviews qu'il incité les joueurs de cracké sont jeu ce qu'il l'interessé n'était pas l'argent qu'il obtient de sont jeu mais de pouvoir partagé sont travail et ses experiences<br>Edmund McMillen est vraiment mon idole en terme de créateur de jeux video et la raison pour laquelle je me suis interessé au codage c'est sans aucun doute grace a lui que je suis dans cette formation aujourd'hui</p>
+    </section>
+
+    <!-- Mini-jeu -->
+    <section id="game-section">
+        <h2>Mini-jeu</h2>
+        <button id="start-game">Lancer le Jeu</button>
+        <div id="game">
+            <img src="assets/img/The_Barren_Room_19.png" id="background-image" alt="Background Image">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </section>
+    <script src="game.js"></script>
+
+    <!-- Contact -->
+    <section id="contact">
+        <H2>CONTACT :</H2>
+        <P>MAIL :beriotlukas@gmail.com</P>
+        <p>TEL :0685233197</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 - Portfolio Inspiré de The Binding of Isaac fait par beriot lukas</p>
+    </footer>
+</body>
+</html>

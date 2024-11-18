@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "isaac": "node game.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
